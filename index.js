@@ -1,6 +1,7 @@
-<script type="module" src="index.js"></script>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';  // تأكد من أن App.js موجود
 
-import { registerRootComponent } from 'expo';
-import App from './App';
-
-registerRootComponent(App);
+// تحديد المكان الذي سيتم تحميل التطبيق فيه
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);
